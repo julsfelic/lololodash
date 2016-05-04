@@ -1,7 +1,9 @@
+'use strict';
+
 var _ = require('lodash');
 
-var worker = function(collection) {
-  _.filter(collection, { active: true });
+var filterWhere = function(collection) {
+  return _.filter(collection, { active: true });
 };
 
-module.exports = worker;
+module.exports = filterWhere;
